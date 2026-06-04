@@ -1,0 +1,25 @@
+Deadlock in Operating Systems - Extended Notes
+
+Section 1: Introduction to Deadlock
+Deadlock is a condition where two or more processes are unable to proceed because each is waiting for a resource held by another process in the set. This is a fundamental problem in operating system design.
+
+Section 2: Four Necessary Conditions
+Mutual Exclusion means resources cannot be shared simultaneously. Hold and Wait means a process holds resources while waiting for others. No Preemption means resources cannot be forcibly taken away. Circular Wait means a circular chain of processes waiting for each other exists.
+
+Section 3: Deadlock Prevention
+Prevention strategies include breaking one of the four necessary conditions. For example, requiring processes to request all resources at once breaks hold and wait. Ordered resource allocation can break circular wait.
+
+Section 4: Deadlock Avoidance
+The Banker's Algorithm is a classic deadlock avoidance technique. It ensures the system never enters an unsafe state by checking whether granting a resource request leaves enough resources for other processes to finish.
+
+Section 5: Deadlock Detection
+Detection algorithms use resource allocation graphs or wait-for graphs to identify cycles. When deadlock is detected, recovery strategies include process termination and resource preemption.
+
+Section 6: Deadlock Recovery
+Recovery may involve aborting all deadlocked processes, aborting one process at a time until deadlock is broken, or preempting resources from processes and rolling them back to a safe state.
+
+Section 7: Practical Considerations
+Modern operating systems often use a combination of prevention, avoidance, detection, and recovery depending on the application domain and performance requirements.
+
+Section 8: Summary
+Understanding deadlock requires mastering the four conditions, prevention and avoidance techniques, detection algorithms, and recovery strategies. These concepts appear frequently in operating systems courses and technical interviews.

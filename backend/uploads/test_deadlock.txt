@@ -1,0 +1,11 @@
+Deadlock in Operating Systems
+
+Deadlock is a condition where two or more processes are unable to proceed because each is waiting for a resource held by another process in the set.
+
+Four necessary conditions for deadlock:
+1. Mutual Exclusion - resources cannot be shared
+2. Hold and Wait - a process holds resources while waiting for others
+3. No Preemption - resources cannot be forcibly taken away
+4. Circular Wait - a circular chain of processes waiting for each other
+
+Prevention strategies include breaking one of the four conditions. Detection and recovery allow the system to identify deadlocks and resolve them by aborting or preempting processes.
